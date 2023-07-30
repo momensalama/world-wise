@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
+      },
+      "id": 73930385
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
+      },
+      "id": 17806751
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": 98443197
+    },
+    {
+      "cityName": "Gueret",
+      "date": "2023-07-06T02:12:48.371Z",
+      "emoji": "🇫🇷",
+      "position": {
+        "lat": "46.15852790331853",
+        "lng": "1.8783883419336838"
+      },
+      "country": "France",
+      "notes": "momen",
+      "id": 98443198
+    },
+    {
+      "cityName": "Cardona",
+      "date": "2023-07-06T02:17:56.405Z",
+      "emoji": "🇪🇸",
+      "position": {
+        "lat": "41.89946990492521",
+        "lng": "1.6833099289318334"
+      },
+      "country": "Spain",
+      "notes": "",
+      "id": 98443199
+    }
+  ]
+}
