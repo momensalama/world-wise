@@ -24,4 +24,4 @@ this command runs the JSON file
 * **datepicker**: display nice date.
 #### Overview
 the project (World Wise) is a small website that makes you put on the map any place you want to visit or get your current location
-and put the places that want to visit around you.
+and put the places that you want to visit around you.
