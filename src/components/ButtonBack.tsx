@@ -6,7 +6,7 @@ function ButtonBack() {
   return (
     <Button
       type="back"
-      onclick={(e) => {
+      onclick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         navigate(-1);
       }}

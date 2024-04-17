@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Spinner from "./Spinner";
 import ButtonBack from "./ButtonBack";
 
-const formatDate = (date) =>
+const formatDate = (date: string) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
     month: "long",
@@ -19,7 +19,7 @@ function City() {
 
   useEffect(
     function () {
-      getCity(id);
+      getCity(id ?? "");
     },
     [id, getCity]
   );
@@ -39,7 +39,7 @@ function City() {
 
       <div className={styles.row}>
         <h6>You went to {cityName} on</h6>
-        <p>{formatDate(date || null)}</p>
+        <p>{formatDate(date ?? "")}</p>
       </div>
 
       {notes && (

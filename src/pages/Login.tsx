@@ -12,7 +12,7 @@ export default function Login() {
   const [password, setPassword] = useState("qwerty");
   const { login, isAuthenticated } = useAuth();
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     if (email && password) login(email, password);

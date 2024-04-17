@@ -27,7 +27,7 @@ function Map() {
 
   useEffect(
     function () {
-      if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
+      if (mapLat && mapLng) setMapPosition([Number(mapLat), Number(mapLng)]);
     },
     [mapLat, mapLng]
   );
@@ -41,7 +41,7 @@ function Map() {
   return (
     <div className={styles.mapContainer}>
       {!geolocationPosition && (
-        <Button type="position" onclick={getPosition}>
+        <Button type="primary" onclick={getPosition}>
           {isLoadingPosition ? "Loading..." : "use your position"}
         </Button>
       )}
@@ -72,7 +72,7 @@ function Map() {
   );
 }
 
-function ChangeCenter({ position }) {
+function ChangeCenter({ position }: { position: number[] }) {
   const map = useMap();
   map.setView(position);
 
@@ -83,7 +83,8 @@ function DetectClick() {
   const navigate = useNavigate();
 
   useMapEvents({
-    click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+    click: (e: { latlng: { lat: any; lng: any } }) =>
+      navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
 }
 

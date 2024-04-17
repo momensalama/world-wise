@@ -1,13 +1,14 @@
 import { createContext, useContext, useReducer } from "react";
+import { AuthContextAction, AuthContextState, AuthContextType } from "../types";
 
-const AuthContext = createContext();
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const initialState = {
   user: null,
   isAuthenticated: false,
 };
 
-function reducer(state, action) {
+function reducer(state: AuthContextState, action: AuthContextAction) {
   switch (action.type) {
     case "login":
       return { ...state, user: action.payload, isAuthenticated: true };
@@ -26,12 +27,12 @@ const FAKE_USER = {
   avatar: "https://i.pravatar.cc/100?u=zz",
 };
 
-function AuthProvider({ children }) {
+function AuthProvider({ children }: { children: React.ReactNode }) {
   const [{ user, isAuthenticated }, dispatch] = useReducer(
     reducer,
     initialState
   );
-  function login(email, password) {
+  function login(email: string, password: string) {
     if (email === FAKE_USER.email && password === FAKE_USER.password)
       dispatch({ type: "login", payload: FAKE_USER });
   }

@@ -10,7 +10,7 @@ import Form from "./components/Form";
 import SpinnerFullPage from "./components/SpinnerFullPage";
 import { Suspense, lazy } from "react";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
+const HomePage = lazy(() => import("./pages/Homepage"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Product = lazy(() => import("./pages/Product"));
 const Login = lazy(() => import("./pages/Login"));

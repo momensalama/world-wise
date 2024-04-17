@@ -1,27 +1,50 @@
 # Project Name
+
 World Wise
+
 ## Description
-World Wise is a small website that makes you put on the map the places you want to visit.
+
+World Wise is a small website that allows you to mark the places you want to visit on a map.
+
 ## Live Demo
-Click on the link to [see demo](https://world-wise-map.netlify.app).
-### Steup
-**Vite** for building and managing the project
-```
-1. git clone https://github.com/momensalama/world-wise.git
-```
-this command runs the JSON file
-```
-2. npm run server
-```
-```
-3. npm run dev
-```
-### Main Functionalities
-* add places on the map.
-* Get your current location as a GPS.
-### Packages
-* **leaflet**: display the map.
-* **datepicker**: display nice date.
-#### Overview
-the project (World Wise) is a small website that makes you put on the map any place you want to visit or get your current location
-and put the places that you want to visit around you.
+
+Click [here](https://world-wise-map.netlify.app) to see a live demo.
+
+## Setup
+
+To set up the project, follow these steps:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/momensalama/world-wise.git
+   ```
+
+2. Run the JSON server:
+
+   ```
+   npm run server
+   ```
+
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+## Main Functionalities
+
+World Wise provides the following main functionalities:
+
+- Add places to the map.
+- Get your current location as GPS coordinates.
+
+## Packages
+
+The project uses the following packages:
+
+- **leaflet**: Used to display the map.
+- **datepicker**: Used to display a nice date picker.
+
+## Overview
+
+World Wise is a small website that allows you to mark any place you want to visit on a map or find places of interest near your current location.

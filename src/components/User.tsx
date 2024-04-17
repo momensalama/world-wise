@@ -11,6 +11,8 @@ function User() {
     navigate("/");
   }
 
+  if (!user) return null;
+
   return (
     <div className={styles.user}>
       <img src={user.avatar} alt={user.name} />

@@ -6,7 +6,9 @@ import {
   useReducer,
 } from "react";
 
-const CitiesContext = createContext();
+import { Action, City, CityContextType, State } from "../types";
+
+const CitiesContext = createContext<CityContextType | undefined>(undefined);
 
 const BASE_URL = "http://localhost:8000";
 
@@ -17,7 +19,7 @@ const initialState = {
   error: "",
 };
 
-function reducer(state, action) {
+function reducer(state: State, action: Action) {
   switch (action.type) {
     case "loading":
       return {
@@ -51,7 +53,7 @@ function reducer(state, action) {
   }
 }
 
-function CitiesProvider({ children }) {
+function CitiesProvider({ children }: { children: React.ReactNode }) {
   const [{ cities, isLoading, currentCity }, dispatch] = useReducer(
     reducer,
     initialState
@@ -75,7 +77,7 @@ function CitiesProvider({ children }) {
   }, []);
 
   const getCity = useCallback(
-    async function getCity(id) {
+    async function getCity(id: string) {
       if (Number(id) === currentCity.id) return;
       dispatch({ type: "loading" });
       try {
@@ -91,7 +93,7 @@ function CitiesProvider({ children }) {
     },
     [currentCity.id]
   );
-  async function createCity(newCity) {
+  async function createCity(newCity: City) {
     dispatch({ type: "loading" });
 
     try {
@@ -114,7 +116,7 @@ function CitiesProvider({ children }) {
       });
     }
   }
-  async function deleteCity(id) {
+  async function deleteCity(id: number) {
     dispatch({ type: "loading" });
 
     try {

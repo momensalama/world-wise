@@ -49,16 +49,16 @@
       "id": 98443198
     },
     {
-      "cityName": "Cardona",
-      "date": "2023-07-06T02:17:56.405Z",
-      "emoji": "🇪🇸",
+      "id": 98443199,
+      "cityName": "Braganca",
+      "date": "2024-04-17T12:03:47.417Z",
+      "emoji": "🇵🇹",
       "position": {
-        "lat": "41.89946990492521",
-        "lng": "1.6833099289318334"
+        "lat": 41.79863851703194,
+        "lng": -6.855373922263158
       },
-      "country": "Spain",
-      "notes": "",
-      "id": 98443199
+      "country": "Portugal",
+      "notes": "kjghjsfg"
     }
   ]
 }
