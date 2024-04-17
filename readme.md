@@ -38,6 +38,10 @@ World Wise provides the following main functionalities:
 - Add places to the map.
 - Get your current location as GPS coordinates.
 
+## Stack
+
+react, css modules
+
 ## Packages
 
 The project uses the following packages:
